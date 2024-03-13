@@ -1,9 +1,9 @@
 @import '../../../styles/colors.scss';
 
 .card{
-    background-color: #FFFFFF; /*todo*/
+    background-color: $font-color-reverse;
     border-radius: 0.8rem;
-    box-shadow: 0 0.2rem 0.2rem #CCCCCC; /*todo*/
+    box-shadow: 0 0.2rem 0.2rem rgba($color:$neutral-color, $alpha: 0.1);
     padding: 1.6rem;
 }
 
@@ -13,7 +13,6 @@ i.user-icon{
     border-radius: 1.6rem;
     background-color: rgba($color: $standard-color, $alpha: 0.1);
     display: inline-block;
-    position: fixed;
 }
 
 .user-title{
@@ -24,7 +23,11 @@ i.user-icon{
     font-weight: 500;
 }
 
-.user-title b, .user-info-subtitle span{
+.user-title b{
+    padding-left: 2.2rem;
+}
+
+.user-info-subtitle span{ 
     padding-left: 5.2rem;
 }
 
@@ -73,6 +76,7 @@ td.user-info-title{
     }
 
     table.user-infos{
+        /* todo */
     }
 
     td.user-info-title{

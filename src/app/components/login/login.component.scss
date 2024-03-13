@@ -1,0 +1,26 @@
+@import '../../../styles/colors.scss';
+
+
+$background-color-login: #fff2eb;
+
+.welcome{
+    background-color: $background-color-login;
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+a.user-space{
+    font-size: 2rem;
+    text-decoration: none;
+    color: $standard-color;
+}
+
+.login-panel{
+    background-color: $background-color;
+    margin: auto;
+    width: 52.9rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 0.2rem rgba($color:#5C7478, $alpha: 0.1); /*todo*/
+    padding: 6rem;
+}
