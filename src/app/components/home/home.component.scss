@@ -1,3 +1,10 @@
 .home{
     padding: 2rem 6rem 6rem 6rem;
 }
+
+// Small devices (landscape phones, 576px and less)
+@media (max-width: 576px) {
+    .home{
+        padding: 2rem;
+    }
+}

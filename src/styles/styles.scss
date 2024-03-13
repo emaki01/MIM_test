@@ -14,7 +14,8 @@ body{
 }
 
 hr{
-    border-top: 1px solid rgba($color: $neutral-color, $alpha: 0.06)
+    border-top: 1px solid rgba($color: $neutral-color, $alpha: 0.06);
+    clear: both;
 }
 
 button{
@@ -22,11 +23,39 @@ button{
     line-height: 1.8rem;
     border-radius: 1.2rem;
     padding: 0.4rem 1.2rem 0.4rem 1.2rem;
-    margin-left: 0.6rem;
+    margin: 0.6rem 1.2rem;
     border: none;
 }
 
 button.btn-validate{
     color: $validate-color;
     background-color: rgba($color: $validate-color, $alpha: 0.1);
+}
+
+h5{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+span.label{
+    background-color: rgba($color: $standard-color, $alpha: 0.1);
+    padding: 0 0.8rem 0 0.8rem;
+    color: $standard-color;
+    text-transform: uppercase;
+}
+
+span.standard-u{
+    color: $standard-color;
+    text-decoration: underline;
+}
+
+span.validate-u{
+    color: $validate-color;
+    text-decoration: underline;
+}
+
+// Small devices (landscape phones, 576px and less)
+@media (max-width: 576px) {
+
 }

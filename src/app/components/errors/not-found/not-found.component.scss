@@ -1,0 +1,11 @@
+@import '../../../../styles/colors.scss';
+
+.error-message{
+    text-align: center;
+    margin : 6rem 0 2rem;
+}
+
+.error-message h5{
+    color: $error-color;
+    margin: 0;
+}
