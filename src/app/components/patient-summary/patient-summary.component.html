@@ -1,0 +1,36 @@
+<div class="card">
+    <i class="fa-regular fa-circle-user user-icon"></i>  <!-- FONTAWESOME : i use this free font because the real font used is for pro-->
+    <div class="user-title">
+        <b class="user-name">Danielle HON</b><span class="age">{{ patientDatas.age }} ans</span>
+        <p>Né.e le {{patientDatas.birthDate}} de sexe {{ patientDatas.sex}}, {{patientDatas.gender}}</p>
+    </div>
+    <div class="user-status">
+        <button class="btn-validate"><i class="fa-regular fa-circle-user"></i> Compte activé</button>  
+        <button class="btn-validate"><i class="fa-regular fa-id-card"></i> Identité validée</button>
+    </div>
+    <hr/>
+    <table class="user-infos">
+        <tr>
+            <td class="user-info-title"><span>Téléphone patient.e : </span></td><td><span>{{patientDatas.phone}}</span></td>
+        </tr>
+        <tr>
+            <td class="user-info-title"><span>Praticien.ne référent.e : </span></td><td><span>{{patientDatas.referringPractitionerFirstName}} {{patientDatas.referringPractitionerLastName}}</span></td>
+        </tr>
+        <tr>
+            <td class="user-info-title"><span>Médecin référent.e : </span></td><td><span>{{patientDatas.phone}}</span></td>
+        </tr>
+    </table>
+    <div class="separate"></div>
+    <table class="user-infos">
+        <tr>
+            <td class="user-info-title"><span>Protocole en cours : </span></td><td><span>{{patientDatas.protocol}}</span></td>
+        </tr>
+        <tr>
+            <td class="user-info-title"><span>Pathologie : </span></td><td><span>{{patientDatas.pathology}}</span></td>
+        </tr>
+        <tr>
+            <td class="user-info-title"><span>Date de début : </span></td><td><span>{{patientDatas.protocolStartDate}}</span></td>
+        </tr>
+    </table>
+
+</div>

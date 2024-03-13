@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import './colors.scss';
+/* global styles */
+
+html{
+    background-color: $background-color;
+    font-family: "Open Sans";
+    font-size: 10px; /* set here to use rem for all other sizes */
+    color: $font-color;
+}
+
+body{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+hr{
+    border-top: 1px solid rgba($color: $neutral-color, $alpha: 0.06)
+}
+
+button{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    border-radius: 1.2rem;
+    padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+    margin-left: 0.6rem;
+    border: none;
+}
+
+button.btn-validate{
+    color: $validate-color;
+    background-color: rgba($color: $validate-color, $alpha: 0.1);
+}
