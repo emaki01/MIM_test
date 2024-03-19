@@ -13,6 +13,7 @@ i.user-icon{
     border-radius: 1.6rem;
     background-color: rgba($color: $standard-color, $alpha: 0.1);
     display: inline-block;
+    vertical-align: middle;
 }
 
 .user-title{
@@ -24,7 +25,7 @@ i.user-icon{
 }
 
 .user-title b{
-    padding-left: 2.2rem;
+    padding-left: 2rem;
 }
 
 .user-info-subtitle span{ 
@@ -45,21 +46,30 @@ i.user-icon{
     clear:right;
 }
 
-table.user-infos{
+/* panel user datas */
+div.user-info-panel{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+div.user-infos-subpanel{
     font-weight: 500;
-    display: inline-block;
+    display: flex;
+    gap: 4rem;
+    flex: 1;
 }
 
-td.user-info-title{
+div.user-info-group{
     color: $neutral-color;
-    text-align: left;
-    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.separate{
-    width: 10rem;
-    display: inline-block;
+div.user-info-group span i{
+ padding-right: 0.4rem;
 }
+
 
 // Small devices (landscape phones, 576px and less)
 @media (max-width: 576px) {
@@ -75,21 +85,22 @@ td.user-info-title{
         clear:left;
     }
 
-    table.user-infos{
-        /* todo */
+
+    div.user-info-panel{
+        display: flex;
+        flex-direction: column;
     }
 
-    td.user-info-title{
-        padding-right: 0;
+    div.user-infos-subpanel{
+        gap: 0rem;
     }
 
-    td{
+    div.user-info-group{
+        flex: 1;
+    }
+
+    div.user-datas span{
         text-align: right;
-        width: 50%;
-    }
-
-    .separate{
-        display: none;
     }
 }
 

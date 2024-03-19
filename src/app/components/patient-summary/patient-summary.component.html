@@ -13,33 +13,33 @@
         <button class="btn-validate"><i class="fa-regular fa-id-card"></i> Identité validée</button>
     </div>
     <hr/>
-    <table class="user-infos">
-        <tbody>
-            <tr>
-                <td class="user-info-title"><span>Téléphone patient.e : </span></td><td><span class="standard-u">{{patientDatas.phone}}</span></td>
-            </tr>
-            <tr>
-                <td class="user-info-title"><span>Praticien.ne référent.e : </span></td><td><span class="validate-u"><i class="fa-solid fa-user-doctor"></i> {{patientDatas.referringPractitionerFirstName}} {{patientDatas.referringPractitionerLastName}}</span></td>
-            </tr>
-            <tr>
-                <td class="user-info-title"><span>Médecin référent.e : </span></td><td><span class="validate-u"><i class="fa-solid fa-user-doctor"></i> {{patientDatas.referringDoctorFirstName}} {{ patientDatas.referringDoctorLastName}}</span></td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="separate"></div>
-    <table class="user-infos">
-        <tbody>
-            <tr>
-                <td class="user-info-title"><span>Protocole en cours : </span></td><td><span class="label">{{patientDatas.protocol}}</span></td>
-            </tr>
-            <tr>
+    <div class="user-info-panel">
+        <div class="user-infos-subpanel">
+            <div class="user-info-group">
+                <span>Téléphone patient.e : </span>
+                <span>Praticien.ne référent.e : </span>
+                <span>Médecin référent.e : </span>
+                
+            </div>
+            <div class="user-info-group user-datas">
+                <span class="standard-u">{{patientDatas.phone}}</span>
+                <span class="validate-u"><i class="fa-solid fa-user-doctor"></i>{{patientDatas.referringPractitionerFirstName}} {{patientDatas.referringPractitionerLastName}}</span>
+                <span class="validate-u"><i class="fa-solid fa-user-doctor"></i>{{patientDatas.referringDoctorFirstName}} {{ patientDatas.referringDoctorLastName}}</span>
+            </div>
+        </div>
+    
+        <div class="user-infos-subpanel">
+            <div class="user-info-group">
+                <span>Protocole en cours : </span>
+                <span>Pathologie : </span>
+                <span>Date de début : </span>
+            </div>
+            <div class="user-info-group user-datas">
+                <span><span class="label">{{patientDatas.protocol}}</span></span>
                 <!-- FONTAWESOME: some icons are in pro package only -->
-                <td class="user-info-title"><span>Pathologie : </span></td><td><span><i class="fa-solid fa-diagram-project"></i> {{patientDatas.pathology}}</span></td>
-            </tr>
-            <tr>
-                <td class="user-info-title"><span>Date de début : </span></td><td><span>{{patientDatas.protocolStartDate}}</span></td>
-            </tr>
-        </tbody>
-    </table>
-
+                <span><i class="fa-solid fa-diagram-project"></i> {{patientDatas.pathology}}</span>
+                <span>{{patientDatas.protocolStartDate}}</span>
+            </div>
+        </div>
+    </div>
 </div>
